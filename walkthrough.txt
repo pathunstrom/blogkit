@@ -1,0 +1,32 @@
+To turn files into website:
+
+Main:
+    Check for new files
+    if newfiles:
+        create post objects and sort by date
+        add to post directory with new name
+        recompile website
+
+
+CompileWebsite:
+    Walk post directory:
+        create deque of file references
+
+    Create Home Page:
+        Create About Section
+        Create Contact Section
+        Create Latest Post Article
+        Render Page Template
+        Write To File
+
+    Render File Objects from posts
+    Add to Archive List
+    if len(archive_list) > page_length:
+        render archive page with next page active
+        write to file
+        iterate archive pages
+    Add to Tag List
+    if len(tag_list) > page_length:
+        render tag page with next page active
+        write to file
+        iterate tag page
